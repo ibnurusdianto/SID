@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page - Cigugur Kidul</title> 
+    <link rel="stylesheet" href="<?= base_url('/css/bootstrap.css') ?>" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cigugur Bersemi</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Beranda</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a 
+                            class="nav-link dropdown-toggle" 
+                            href="#" 
+                            role="button" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false"
+                        >
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
+                            <li><a class="dropdown-item" href="#">Profile Kepala Desa</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Deskripsi Singkat</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a 
+                            class="nav-link dropdown-toggle" 
+                            href="#" 
+                            role="button" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false"
+                        >
+                            Informasi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Berita</a></li>
+                            <li><a class="dropdown-item" href="#">Photo Gallery</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Agenda Desa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold">Selamat Datang di Desa Cigugur Bersemi</h1>
+                    <p class="lead">
+                        Situs resmi sistem informasi desa yang menyediakan berita, agenda, dan informasi terkini seputar perkembangan desa kami.
+                    </p>
+                </div>
+                <!-- 
+                  gambar harus ukuran 564 x 752 pixels, supaya lebih fleksibel,
+                  mungkin nanti akan di fix atau diperbarui
+                -->
+                <div class="col-lg-6 text-center">
+                    <img src="<?= base_url('assets/img1.jpg')?>" alt="Foto Desa Cigugur Bersemi" class="img-fluid rounded shadow" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Visi dan Misi Section -->
+<section class="visi-misi bg-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Visi dan Misi Desa</h2>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 mb-4">
+                <div class="p-4 bg-light shadow-sm rounded h-100">
+                    <h3 class="fw-bold text-primary">Visi</h3>
+                    <p>
+                        “Mewujudkan Desa Cigugur Bersemi sebagai desa yang maju, mandiri, berdaya saing, dan berlandaskan nilai-nilai kebersamaan, gotong royong, serta kearifan lokal.”
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4 bg-light shadow-sm rounded h-100">
+                    <h3 class="fw-bold text-primary">Misi</h3>
+                    <ul class="mb-0">
+                        <li>Meningkatkan kualitas pelayanan publik yang cepat dan transparan</li>
+                        <li>Memperkuat sektor ekonomi berbasis potensi lokal</li>
+                        <li>Melestarikan nilai budaya dan lingkungan desa</li>
+                        <li>Memfasilitasi pendidikan dan kesehatan yang lebih baik</li>
+                        <li>Menumbuhkan partisipasi aktif masyarakat dalam pembangunan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Visi dan Misi Section -->
+
+<!-- Sejarah Desa Section -->
+<section class="sejarah-desa bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Sejarah Desa Cigugur Bersemi</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="<?= base_url('assets/desa.jpg') ?>" alt="Gambar Sejarah Desa" class="img-fluid rounded shadow-sm" />
+            </div>
+            <div class="col-md-6">
+                <div class="p-3">
+                    <p>
+                        Desa Cigugur Bersemi memiliki sejarah panjang yang mencerminkan semangat perjuangan dan kebersamaan masyarakatnya. Didirikan pada awal abad ke-20, desa ini berawal dari sebuah komunitas kecil petani dan pengrajin yang hidup berdampingan dengan alam.
+                    </p>
+                    <p>
+                        Seiring waktu, Cigugur Bersemi tumbuh menjadi desa yang mandiri dan produktif. Banyak tokoh lokal yang turut berjasa dalam membangun infrastruktur, memperjuangkan pendidikan, dan menjaga nilai-nilai adat serta budaya setempat.
+                    </p>
+                    <p>
+                        Hingga kini, sejarah desa terus diwariskan dari generasi ke generasi sebagai identitas dan kebanggaan bersama warga Desa Cigugur Bersemi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Sejarah Desa Section -->
+
+    <!-- Profile Informasi Kepala Desa -->
+<section class="profile-kades bg-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Profile Kepala Desa</h2>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="<?= base_url('assets/kades-kawe.jpg')?>" alt="Foto Kepala Desa" class="img-fluid rounded shadow" style="max-width: 250px;">
+            </div>
+            <div class="col-md-6">
+                <h3 class="fw-bold">Bapak/Ibu Nama Kepala Desa</h3>
+                <p class="text-muted fst-italic">Kepala Desa Cigugur Bersemi</p>
+                <p>
+                    Bapak/Ibu Nama Kepala Desa adalah pemimpin yang berdedikasi pada pengembangan dan kemajuan Desa Cigugur Bersemi. Memimpin berbagai program pembangunan desa yang berfokus pada peningkatan kesejahteraan masyarakat dan pelestarian budaya lokal.
+                </p>
+                <ul class="list-unstyled">
+                    <li><strong>Masa Jabatan:</strong> 2021 - 2027</li>
+                    <li><strong>Email:</strong> kepala@cigugurbersemi.id</li>
+                    <li><strong>Telepon:</strong> 0812-3456-7890</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Profile Informasi Kepala Desa -->
+
+<!-- Alamat dan Lokasi Desa -->
+<section class="alamat-desa bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Alamat & Lokasi Desa</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h5 class="fw-bold">Alamat Kantor Desa:</h5>
+                    <p class="mb-2">
+                        Jl. Raya Cigugur No. 123<br />
+                        Dusun Kerajan 1, Desa Cigugur Bersemi<br />
+                        Kec. Cigugur, Kab. Kuningan, Jawa Barat 45552
+                    </p>
+                    <p class="mb-2"><strong>Telepon:</strong> (0232) 888-456</p>
+                    <p class="mb-0"><strong>Email:</strong> info@cigugurbersemi.id</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="ratio ratio-4x3 shadow-sm rounded overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.878930868817!2d107.90337407552892!3d-6.322124957656812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e694f3424070eb7%3A0xd7bf0aaeb3558c62!2sKANTOR%20DESA%20CIGUGUR!5e0!3m2!1sid!2sid!4v1754242544404!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Alamat dan Lokasi Desa -->
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5">
+        <div class="container px-5">
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <h3 class="fw-bold">Cigugur Bersemi</h3>
+                    <p class="pt-2">321, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="mb-2">08988109035</p>
+                    <p>Dusun Kerajan 1</p>
+                </div>
+                <div class="col">
+                    <h4>Menu</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1">Beranda</li>
+                        <li class="py-1">Visi dan Misi</li>
+                        <li class="py-1">Deskripsi Singkat</li>
+                        <li class="py-1">Data Riwayat Kepala Desa</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Lanjutan</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1">Demografis</li>
+                        <li class="py-1">Lembaga</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 text-lg-end">
+                    <h4>Social Media Links</h4>
+                    <div class="social-media pt-2">
+                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="d-sm-flex justify-content-between py-1">
+                <p>2025 ©Cigugur Jav.</p>
+                <p>
+                    <a href="#" class="text-light text-decoration-none pe-4">Terms of use</a>
+                    <a href="#" class="text-light text-decoration-none">Privacy policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" 
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
