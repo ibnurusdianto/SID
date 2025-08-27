@@ -1,0 +1,237 @@
+.container.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.gallery-section .text-center {
+    text-align: center;
+}
+
+.gallery-section h2.fw-bold {
+    font-size: 2.5rem;
+    font-weight: 700 !important;
+    color: #343a40;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-section p.text-muted {
+    font-size: 1.1rem;
+    color: #6c757d !important;
+    margin-bottom: 3rem;
+}
+
+.gallery-section .card {
+    border: none;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.gallery-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.gallery-section .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.gallery-section .position-relative {
+    position: relative;
+}
+
+.gallery-section .badge {
+    font-size: 0.85rem;
+    padding: 0.5em 0.75em;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.gallery-section .badge.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+.gallery-section .badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.gallery-section .badge i {
+    margin-right: 0.25rem;
+}
+
+.gallery-section .btn-light {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    color: #343a40;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.gallery-section .btn-light:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.gallery-section .btn-light i {
+    font-size: 1.2rem;
+}
+
+.gallery-section .position-absolute.top-50.start-50 {
+    pointer-events: none;
+}
+
+.gallery-section .bi-play-circle-fill {
+    font-size: 3.5rem !important;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-section .card-body {
+    padding: 1.5rem;
+}
+
+.gallery-section .card-body .d-flex.align-items-center.mb-2 {
+    margin-bottom: 0.75rem !important;
+}
+
+.gallery-section .card-body .bi-calendar3,
+.gallery-section .card-body .bi-person-fill {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.gallery-section .card-body small.text-muted {
+    font-size: 0.875rem;
+    color: #6c757d !important;
+}
+
+.gallery-section .card-title {
+    font-size: 1.35rem;
+    font-weight: 700 !important;
+    color: #343a40;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.gallery-section .card-text {
+    font-size: 0.95rem;
+    color: #6c757d !important;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.gallery-section .card-body small.text-primary {
+    font-size: 0.9rem;
+    color: #0d6efd !important;
+    font-weight: 600 !important;
+}
+
+/* Pagination */
+.gallery-section .pagination {
+    --bs-pagination-color: #0d6efd;
+    --bs-pagination-hover-color: #0a58ca;
+    --bs-pagination-focus-color: #0a58ca;
+    --bs-pagination-active-bg: #0d6efd;
+    --bs-pagination-active-border-color: #0d6efd;
+    --bs-pagination-disabled-color: #6c757d;
+    --bs-pagination-disabled-bg: #e9ecef;
+    --bs-pagination-border-radius: 0.5rem;
+}
+
+.gallery-section .page-item .page-link {
+    border-radius: 0.5rem;
+    margin: 0 0.25rem;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.gallery-section .page-item.active .page-link {
+    color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.gallery-section .page-item.disabled .page-link {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+}
+
+.gallery-section .page-item .page-link i {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 767.98px) {
+    .gallery-section h2.fw-bold {
+        font-size: 2rem;
+    }
+
+    .gallery-section p.text-muted {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-section .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .gallery-section .card-img-top {
+        height: 200px;
+    }
+
+    .gallery-section .card-title {
+        font-size: 1.2rem;
+    }
+
+    .gallery-section .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .gallery-section .card-img-top {
+        height: 180px;
+    }
+
+    .gallery-section .card-body {
+        padding: 1rem;
+    }
+
+    .gallery-section .card-title {
+        font-size: 1.1rem;
+    }
+
+    .gallery-section .card-text {
+        font-size: 0.85rem;
+    }
+
+    .gallery-section .badge {
+        font-size: 0.75rem;
+    }
+
+    .gallery-section .btn-light {
+        width: 35px;
+        height: 35px;
+    }
+
+    .gallery-section .btn-light i {
+        font-size: 1rem;
+    }
+
+    .gallery-section .bi-play-circle-fill {
+        font-size: 3rem !important;
+    }
+}
